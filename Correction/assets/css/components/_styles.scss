@@ -1,0 +1,73 @@
+.style {
+    display: flex;
+    align-items: center;
+    padding: 60px;
+
+    div:first-child {
+        text-align: center;
+        width: 50%;
+
+        img {
+            margin: auto;
+        }
+    }
+
+    div:last-child {
+        width: 50%;
+
+        h2 {
+            @extend %h2;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .options {
+            padding: 16px 0 62px 0;
+
+            div {
+                padding: 3px;
+                height: 24px;
+                width: 24px;
+                border-radius: 50%;
+                border: 1px solid $gray-300;
+
+                .color {
+                    height: 24px;
+                    width: 24px;
+                    border-radius: 50%;
+                }
+
+                &.options01 .color {
+                    background-color: $pink;
+                }
+
+                &.options02 .color {
+                    background-color: $gray-300;
+                }
+
+                &.options03 .color {
+                    background-color: $yellow;
+                }
+
+                img {
+                    height: 24px;
+                    width: 24px;
+                    border-radius: 50%;
+                }
+
+                &:hover {
+                    border-color: $orange;
+                    cursor: pointer;
+                }
+
+                &.active {
+                    border-color: $orange;
+                }
+            }
+        }
+    }
+}

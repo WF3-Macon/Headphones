@@ -1,0 +1,31 @@
+footer {
+    background-color: $gray-800;
+    color: $white;
+    padding: 62px 0;
+
+    .footer {
+        display: flex;
+        align-items: baseline;
+        gap: 125px;
+
+        ul {
+            padding: 0;
+            list-style: none;
+
+            li {
+                line-height: 2em;
+
+                a {
+                    color: $gray-500;
+                    font-size: 0.85em;
+                    transition: 350ms;
+
+                    &:hover {
+                        color: $white;
+                        transition: 350ms;
+                    }
+                }
+            }
+        }
+    }
+}

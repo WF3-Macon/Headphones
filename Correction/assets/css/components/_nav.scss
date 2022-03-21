@@ -1,0 +1,22 @@
+nav {
+    padding: 12px 0;
+
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        > a {
+            text-decoration: none;
+            font-size: 1.35em;
+            font-weight: 600;
+            color: $gray-700;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 32px;
+        }
+    }
+}

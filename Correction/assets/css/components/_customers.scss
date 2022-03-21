@@ -1,0 +1,68 @@
+.customer {
+    background-color: $gray-200;
+    padding: 100px 0;
+    text-align: center;
+
+    h2 {
+        font-size: 2em;
+        font-weight: 400;
+        margin-top: 0;
+        padding-bottom: 42px;
+    }
+
+    .reviews {
+        text-align: left;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        blockquote {
+            margin: 0;
+
+            .card {
+                font-size: 0.85em;
+                color: $gray-500;
+                background-color: $white;
+                border-radius: 6px;
+                box-shadow: 0 3px 3px $shadow;
+                padding: 22px;
+                line-height: 1.5em;
+                font-weight: 300;
+                margin-bottom: 12px;
+            }
+
+            div:last-child {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                width: 85%;
+                margin: auto;
+
+                .profile {
+                    width: 50%;
+                    text-align: right;
+
+                    img {
+                        width: 52px;
+                        height: 52px;
+                        border-radius: 50px;
+                    }
+                }
+
+                div {
+                    display: block;
+
+                    h6 {
+                        font-size: 0.9em;
+                        margin: 0;
+                    }
+
+                    span {
+                        font-size: 0.75em;
+                        color: $gray-500
+                    }
+                }
+            }
+        }
+    }
+}

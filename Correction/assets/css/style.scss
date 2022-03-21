@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+@import
+'components/vars',
+'components/nav',
+'components/header',
+'components/styles',
+'components/gallery',
+'components/details',
+'components/customers',
+'components/footer';
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: $gray-700;
+}
+
+.container {
+    width: 65%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: $gray-700;
+    font-weight: 300;
+    transition: 350ms;
+
+    &:hover {
+        color: $orange;
+        transition: 350ms;
+    }
+}
+
+.price {
+    font-size: 1.5em;
+
+    span {
+        font-size: 0.75em;
+    }
+}
+
+.separator {
+    border-bottom: 1px solid $gray-300;
+    margin-bottom: 125px;
+}
+
+.btn-orange {
+    background-color: $orange;
+    text-decoration: none;
+    color: $white;
+    padding: 16px 32px;
+    border-radius: 6px;
+    transition: 350ms;
+
+    &:hover {
+        color: $white;
+        background-color: $orange-500;
+        transition: 350ms;
+    }
+}
+
+%h2 {
+    font-size: 2em;
+    font-weight: 400;
+    padding-bottom: 42px;
+}
